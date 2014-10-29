@@ -36,7 +36,7 @@ vagrantfile-local:
                     - '--parser future'
         synced_folder:
             wB68WdjwFzxw:
-                source: ./python-tutorial
+                source: ../python-tutorial
                 target: /var/www
                 sync_type: default
                 rsync:
