@@ -37,7 +37,7 @@ vagrantfile-local:
         synced_folder:
             wB68WdjwFzxw:
                 source: ../python-tutorial
-                target: /var/www
+                target: /var/www/tutorial
                 sync_type: default
                 rsync:
                     args:
@@ -66,6 +66,7 @@ server:
     install: '1'
     packages:
         - vim
+        - python-pip
 firewall:
     install: '1'
     rules: null
@@ -128,7 +129,7 @@ nginx:
 php:
     install: '1'
     version: '56'
-    composer: '1'
+    composer: '0'
     composer_home: ''
     modules:
         php:
@@ -142,7 +143,7 @@ php:
         display_errors: On
         error_reporting: '-1'
         session.save_path: /var/lib/php/session
-    timezone: America/Chicago
+    timezone: Europe/Berlin
     mod_php: 0
 hhvm:
     install: '0'
