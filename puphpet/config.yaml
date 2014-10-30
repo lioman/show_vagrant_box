@@ -129,7 +129,7 @@ nginx:
 php:
     install: '1'
     version: '56'
-    composer: '0'
+    composer: '1'
     composer_home: ''
     modules:
         php:
@@ -187,7 +187,7 @@ python:
         I0zAkD535SR9:
             version: ''
 mysql:
-    install: '0'
+    install: '1'
     root_password: '123'
     adminer: 0
     databases:
